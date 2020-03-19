@@ -41,6 +41,7 @@ gem 'devise'
 gem 'font-awesome-rails'
 gem 'haml-rails'
 gem 'jquery-rails'
+gem 'mini_magick'
 gem 'simple_form'
 
 group :development, :test do

@@ -1,4 +1,7 @@
 = "Profile for #{@user.email}"
 %br/
 %br/
+= image_tag @user.avatar.url(:thumb) if @user.avatar?
+%br/
+%br/
 = link_to 'Edit', edit_user_path(@user)
