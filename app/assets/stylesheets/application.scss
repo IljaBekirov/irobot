@@ -1,0 +1,264 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+html, body {
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f3f3f4;
+  color: #676a6c;
+  height: 100%;
+}
+.box {
+  border: 1px red dotted;
+}
+.valign-top {
+  vertical-align: top;
+}
+#logo {
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
+  height: 62px;
+  padding: 20px;
+  a {
+    color: #f5f5f5;
+  }
+}
+#nav-header {
+  background-color: #fff;
+  border-bottom: 1px solid #e7eaec;
+  .dropdown-header {
+    margin: 0;
+    padding: 12px 0 0 0;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      float: left;
+      margin-left: 15px;
+      padding: 17px;
+    }
+  }
+}
+.navbar-default {
+  background-color: #fff;
+  .navbar-toggle {
+    border-color: #23527c;
+    background-color: #337ab7;
+    &:hover {
+      background-color: #337ab7;
+    }
+    &:focus {
+      background-color: #337ab7;
+    }
+  }
+  .icon-bar {
+    border: 1px white solid;
+  }
+}
+#side-menu {
+  min-width: 270px;
+  min-height: 100vh;
+  background-color: #2f4050;
+  padding: 0;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #9fb1c2;
+    font-weight: bold;
+    font-size: 14px;
+    .fa {
+      margin-right: 5px;
+      font-size: 22px;
+    }
+    &:hover {
+      background-color: #293847;
+      color: #fff;
+      display: block;
+    }
+  }
+  .active {
+    a {
+      color: #fff;
+      background-color: #293846;
+    }
+  }
+  .collapseable {
+    border-left: 4px solid #fff;
+    background-color: #293846;
+    li {
+      padding-left: 20px;
+      padding-top: 5px;
+    }
+    a {
+      color: #9fb1c2;
+      font-size: 13px;
+      padding: 0 10px;
+      text-decoration: none;
+      display: block;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .menu-link >ul >li {
+    padding-bottom: 10px;
+  }
+  .menu-up {
+    display: none;
+    .fa {
+      font-size: 16px;
+    }
+  }
+  .menu-down {
+    font-size: 18px;
+    .fa {
+      font-size: 16px;
+    }
+  }
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+.well {
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #fff;
+}
+//------------------------------
+//TODO вынести в отдельный файл
+.devise-container {
+  display: table;
+  max-width: 400px;
+  .devise-bs {
+    margin: 20px 0 20px 0;
+    padding: 10px 30px 0 30px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  .btn-auth {
+    width: 100%;
+  }
+}
+#admin_remember_me {
+  height: 16px;
+  width: 16px;
+  margin: 4px 5px 0 -20px;
+}
+#new_admin {
+  padding-bottom: 20px;
+}
+//Styles for main content area
+.content {
+  background-color: #fff;
+  margin-top: 15px;
+  border-top: 4px #e7eaec solid;
+  header {
+    padding: 10px 20px 0 20px;
+    border-bottom: 1px #f3f3f4 solid;
+    font-size: 24px;
+  }
+  .content-inner {
+    padding: 0 20px;
+  }
+}
+.edit-form {
+  padding: 20px 0;
+  //padding-left: 35%;
+  //padding-right: 35%;
+  //text-align: center;
+  abbr {
+    color: red;
+  }
+  .edit-form__save-button {
+    width: 100%;
+  }
+  .edit-form__date-field {
+    width: 100%;
+  }
+}
+//show data if edit deprecated
+.table-read__left-col{
+  font-weight: bold;
+  white-space: nowrap;
+  text-align:left;
+}
+.table-read__right-col{
+  width: 100%;
+  text-align:left;
+}
+
+//styles for booking info
+.table-booking {
+  th {
+    background-color: #337ab7;
+    color: #ffffff;
+    border: 1px solid #2e6da4;
+  }
+  td {
+    border: 1px solid #ddd;
+  }
+}
+.table-center-column {
+  border: 1px solid #ddd;
+
+  &:last-child {
+    vertical-align: middle;
+    text-align: center;
+  }
+}
+.booking-block-header {
+  font-size: 18px;
+  color: #337ab7;
+}
+.booking-segment-waiting-time {
+  background-color: #ddd;
+  text-align: center;
+}
+
+textarea.form-control{
+  background-color: white !important;
+  width: 100%;
+  resize: inherit;
+  height: 400px;
+}
+del {
+  text-decoration: none;
+  color: #b30000;
+  background: #fadad7;
+}
+ins {
+  background: #eaf2c2;
+  color: #406619;
+  text-decoration: none;
+}
+pre.diff-change{
+  background-color: white !important;
+  width: 100%;
+  padding: 0;
+  border: none;
+}

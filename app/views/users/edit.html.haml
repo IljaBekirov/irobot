@@ -1,0 +1,5 @@
+= "Edit Profile for "
+= form_for(@user) do |f|
+  = f.label :email
+  = f.text_field :email
+  = f.submit 'Save change'
